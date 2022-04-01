@@ -7,6 +7,6 @@ Portfolio de desenhos
 
 :up: Atualização
 
-:beatle: Correção de Bug
+:beetle: Correção de Bug
 
 :checkered_flag: Release
