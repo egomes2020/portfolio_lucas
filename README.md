@@ -1,5 +1,5 @@
-# Portifólio Lucas (Lug)
- ### Portfolio de desenhos :art:
+# Portfólio Lucas (Lug)
+ ### Portfólio de desenhos :art:
 
 ## Icones
 
