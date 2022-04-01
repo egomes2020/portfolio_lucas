@@ -3,7 +3,7 @@ Portfolio de desenhos
 
 ## Icones
 
-:package: Nova Funcionalidade
+:wrench: Nova Funcionalidade
 
 :up: Atualização
 
