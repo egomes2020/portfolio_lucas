@@ -13,10 +13,20 @@ header{
 }
 
 .brand-logo{
-    margin-left: 1.5em;
-    margin-top: .3em;
+    margin-left: .5em;
+    margin-top: .2em;
 }
 
 .nav-wrapper{
     padding-right: 35px;
+}
+
+.img-wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.img-header{
+    width: 30%;
+    height: 100%;
 }
