@@ -1,38 +1,39 @@
 @import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
 
 
-body{
+body {
     margin: 0;
     padding: 0%;
 }
 
-header{
-    width: 99,8vw;
+header {
+    width: 99, 8vw;
     height: 100vh;
     overflow: hidden;
-  /*   background-color: pink; */ 
-   background-image: url(/img/pexels-lina-lisitsyna-7606285.jpg);
-
+    background-image: url(/img/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+    background-size: cover;
 }
 
-.brand-logo{
+.brand-logo {
     margin-left: .5em;
     margin-top: .2em;
 }
 
-.nav-wrapper{
+.nav-wrapper {
     padding-right: 35px;
 }
 
-.img-wrapper{
+.img-wrapper {
     width: 100%;
     height: 100%;
     overflow: hidden;
+    display: flex;
+
 }
 
-.img-wrapper img{
-    width: 100%;
-    height: 100%;
- /*    object-fit: contain; */
+.img-wrapper img {
+
   
+  
+
 }
