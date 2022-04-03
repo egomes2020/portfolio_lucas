@@ -10,7 +10,9 @@ header{
     width: 99,8vw;
     height: 100vh;
     overflow: hidden;
-  /*   background-color: pink; */
+  /*   background-color: pink; */ 
+   background-image: url(/img/pexels-lina-lisitsyna-7606285.jpg);
+
 }
 
 .brand-logo{
@@ -31,5 +33,6 @@ header{
 .img-wrapper img{
     width: 100%;
     height: 100%;
-    object-fit: cover;
+ /*    object-fit: contain; */
+  
 }
