@@ -6,34 +6,24 @@ body {
     padding: 0%;
 }
 
-header {
-    width: 99, 8vw;
-    height: 100vh;
-    overflow: hidden;
-    background-image: url(/img/brandi-redd-aJTiW00qqtI-unsplash.jpg);
-    background-size: cover;
-}
 
 .brand-logo {
     margin-left: .5em;
     margin-top: .2em;
 }
 
-.nav-wrapper {
-    padding-right: 35px;
+#one{
+    height: 100vh;
 }
 
-.img-wrapper {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+#two{
+    height: 100vh;
+ 
+}
+
+.div-header{
     display: flex;
-
+    align-items: center;
+    justify-content: center;
 }
 
-.img-wrapper img {
-
-  
-  
-
-}
