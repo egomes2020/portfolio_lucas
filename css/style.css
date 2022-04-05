@@ -5,6 +5,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merienda&display=swap');
 
 
+
 *{
     margin: 0;
     padding: 0;
@@ -15,6 +16,12 @@ header{
     background-color:rgba(0,0,0,1);
     position: relative;
 }
+
+nav{
+    display: none;
+}
+ 
+    
 
 header div.row{
     width: 100%;
@@ -39,10 +46,18 @@ img.header{
     font-size: 10em;
     font-family: 'Amatic SC', 'Merienda', sans-serif;
     text-shadow:5px 2px 6px #ffff;
+    margin-bottom: 0;
 }
 
 .title h2{
-    margin-top: -25px;
+    margin-top: 0px;
+}
+
+main h1{
+    font-family: 'Amatic SC', 'Merienda', sans-serif;
+    padding: 10px;
+    margin-top: 5px;
+    font-size:6em ;
 }
 
 .logo{
