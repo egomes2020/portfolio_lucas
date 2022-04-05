@@ -44,24 +44,22 @@ nav {
 }
 
 .title h1 {
-    font-size: 6em;
+    font-size: 5em;
     margin-bottom: 5px;
-    text-shadow: 2px 0 3px  #ffff;
-  /*   font-family: 'Amatic SC', cursive; */
-   /*  font-family: 'Anton', sans-serif; */
-  /*   font-family: 'Bangers', cursive; */
+    text-shadow: 2px 0 3px #ffff;
+    letter-spacing: 0.1em;
+    /*   font-family: 'Amatic SC', cursive; */
+    /*  font-family: 'Anton', sans-serif; */
+    /*   font-family: 'Bangers', cursive; */
     /* font-family: 'Courgette', cursive; */
-   /*  font-family: 'Kanit', sans-serif; */
+    /*  font-family: 'Kanit', sans-serif; */
     /* font-family: 'Merienda', cursive; */
     /* font-family: 'Monoton', cursive; */
-     font-family: 'Orbitron', sans-serif;            /* boa */
-   /*  font-family: 'Parisienne', cursive; */
-   /*  font-family: 'Playfair Display SC', serif; */
-   /*  font-family: 'Poiret One', cursive; */
-}
-
-.title h2 {
-    margin-top: 0px;
+    font-family: 'Orbitron', sans-serif;
+    /* boa */
+    /*  font-family: 'Parisienne', cursive; */
+    /*  font-family: 'Playfair Display SC', serif; */
+    /*  font-family: 'Poiret One', cursive; */
 }
 
 
@@ -96,7 +94,31 @@ h2 span {
 
 /* PORTFÓLIO */
 .portfolio {
+   /*  padding: 10px; */
+   /*  background-color: aquamarine; */
     display: flex;
     flex-wrap: wrap;
-    border-color: aquamarine;
+    margin-bottom: 50px;
+}
+
+#portfolio h1 {
+    margin: 100px 0 40px 0;
+    font-size: 4em;
+     font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    letter-spacing: 0.1em;
+}
+
+.cards-item {
+    width: 325px;
+    height: 400px;
+    margin: 6px;
+    
+}
+
+.cards-item img {
+    width: 325px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 4px;
 }
