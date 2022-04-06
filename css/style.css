@@ -102,8 +102,8 @@ nav {
 
 /* LOGO */
 .logo {
-    width: 100px;
-    height: 100px;
+    width: 85px;
+    height: 85px;
     ;
 }
 
@@ -128,13 +128,16 @@ h2 span {
 .fa-facebook {
     margin: .1em;
 }
-.fa-instagram{
+
+.fa-instagram {
     margin: .1em;
 }
-.fa-twitter{
+
+.fa-twitter {
     margin: .1em;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     margin: .1em;
 }
 
@@ -142,14 +145,17 @@ h2 span {
 .social a .fa-facebook:hover {
     color: rgb(42, 84, 236) !important;
 }
+
 .social a .fa-instagram:hover {
     color: rgb(232, 25, 146) !important;
 }
+
 .social a .fa-twitter:hover {
     color: rgb(88, 193, 238) !important;
 }
+
 .social a .fa-whatsapp:hover {
-    color: rgb(41, 212, 15)  !important;
+    color: rgb(41, 212, 15) !important;
 }
 
 
@@ -206,6 +212,7 @@ p {
 #portfolio {
     position: relative;
     margin-bottom: 200px;
+    padding-left: 10px;
 }
 
 #portfolio .btn-a {
@@ -252,14 +259,14 @@ p {
 
 
 .cards-item {
-    width: 325px;
+    width: 310px;
     height: 400px;
-    margin: 6px;
+    margin: 10px;
 
 }
 
 .cards-item img {
-    width: 325px;
+    width: 310px;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
@@ -430,7 +437,7 @@ p {
 
 
 /* FOOTER */
-footer{
+footer {
     position: relative;
 }
 
@@ -447,13 +454,16 @@ footer{
 .fa-facebook {
     margin: .1em;
 }
-.fa-instagram{
+
+.fa-instagram {
     margin: .1em;
 }
-.fa-twitter{
+
+.fa-twitter {
     margin: .1em;
 }
-.fa-whatsapp{
+
+.fa-whatsapp {
     margin: .1em;
 }
 
@@ -461,12 +471,61 @@ footer{
 .social-footer a .fa-facebook:hover {
     color: rgb(42, 84, 236) !important;
 }
+
 .social-footer a .fa-instagram:hover {
-    color:  rgb(232, 25, 146) !important;
+    color: rgb(232, 25, 146) !important;
 }
+
 .social-footer a .fa-twitter:hover {
     color: rgb(88, 193, 238) !important;
 }
+
 .social-footer a .fa-whatsapp:hover {
     color: rgb(41, 212, 15) !important;
 }
+
+
+
+/* @media (min-width: 400px) {
+   .title h1 {
+     font-size: 4em;
+     margin: -30px 20px;
+     flex-grow: 0;
+   }
+
+   .foto {
+       flex-basis: 60%;
+   }
+
+   .logo {
+    width: 60px;
+    height: 60px;
+    margin-top: -50px;
+}
+
+h2 span {
+    font-size: 40px;
+}
+
+
+.cards-item {
+    width: 280px;
+    height: 300px;
+    margin: 6px 6px 6px 100px;
+
+}
+
+.cards-item img {
+    width: 280px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+#portfolio .btn-a {
+    left: 170px;
+    top: 90px;
+  
+}
+
+} */
