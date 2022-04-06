@@ -16,6 +16,7 @@
 header {
     background-color: rgba(0, 0, 0, 1);
     position: relative;
+    margin-bottom: 100px;
 }
 
 nav {
@@ -32,7 +33,7 @@ nav {
 }
 
 
-/* TÍTULO */
+/* TÍTULO PRINCIPAL*/
 .title {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@ nav {
 
 .title h1 {
     font-size: 5em;
-    margin-bottom: 5px;
+    margin-bottom: -70px;
     text-shadow: 2px 0 3px #ffff;
     letter-spacing: 0.1em;
     /*   font-family: 'Amatic SC', cursive; */
@@ -82,7 +83,7 @@ nav {
 /* LOGO */
 .logo {
     width: 100px;
-    height: 100px;
+    height: 100px;;
 }
 
 h2 span {
@@ -90,23 +91,61 @@ h2 span {
 }
 
 
+/* TÍTULOS */
+h1 {
+    margin: 100px 0 120px 0;
+    font-size: 4em;
+     font-family: 'Poiret One', cursive;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 3px 3px #000;
+}
+
+h2 {
+    margin: 80px 0 40px 0;
+    font-size: 2.5em;
+     /*   font-family: 'Amatic SC', cursive; */
+    /*  font-family: 'Anton', sans-serif; */
+    /*   font-family: 'Bangers', cursive; */
+    /* font-family: 'Courgette', cursive; */
+     font-family: 'Kanit', sans-serif;
+    /* font-family: 'Merienda', cursive; */
+    /* font-family: 'Monoton', cursive; */
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-shadow: 2px 3px 3px #000;
+}
+
+p {
+    font-family: 'Kanit', sans-serif;
+    font-weight: 100;
+    font-size: 1.2rem;
+}
+
 
 
 /* PORTFÓLIO */
+#portfolio {
+    position: relative;
+}
+
 .portfolio {
    /*  padding: 10px; */
    /*  background-color: aquamarine; */
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
-#portfolio h1 {
-    margin: 100px 0 40px 0;
-    font-size: 4em;
-     font-family: 'Poiret One', cursive;
-    font-weight: bold;
-    letter-spacing: 0.1em;
+#portfolio button {
+    position: absolute;
+    left: 610px;
+    top: 85px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 4px #000;
+    
 }
 
 .cards-item {
@@ -121,4 +160,119 @@ h2 span {
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
+}
+
+
+
+/* EVOLUTION */
+.evolution {
+    position: relative;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.evolution button {
+    position: absolute;
+    left: 280px;
+    bottom: 90px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    text-transform: uppercase;
+    box-shadow: 2px 3px 4px #000;
+    
+}
+
+.container-card {
+    /* Used to position the stacked cards */
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: pink;
+}
+
+.container-card img {
+    width: 200%;
+    height: 250%;
+    object-fit: cover;
+}
+
+.container__card {
+    /* Absolute position */
+    left: 0px;
+    position: absolute;
+    top: 0px;
+   
+  
+
+    /* Take full size */
+    height: 100%;
+    width: 100%;
+
+    /* Displayed under the container */
+    z-index: -1;
+
+    /* Background and border colors */
+    background-color: rgb(232, 13, 13);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    /* Rotate it. Change the number of degrees for the following cards */
+    transform: rotate(5deg);
+}
+
+
+
+.layered-card {
+    position: relative;
+    width: 300px;
+    height: 350px;
+    background-color: aqua;
+    margin: 20px;
+    border-radius: 3px;
+}
+
+
+/* PÁGINA SOBRE */
+.sobre {
+    padding: 10px;
+    margin-bottom: 100px;
+}
+
+.sobre-container {
+    padding: 10px;
+    margin-top: -50px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.sobre-container p {
+    text-indent: 25px;
+    margin: 10px 0px;
+}
+
+.article-1 {
+    margin-right: 20px;
+    padding: 10px;
+    border-right: 1px solid #fff;
+}
+
+.div-1 {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
+}
+
+.article-2 {
+    padding: 10px;
+}
+
+.div-2 {
+    padding: 5px;
+    width: 250px;
+    height: 250px;
+    background-color: aqua;
 }
