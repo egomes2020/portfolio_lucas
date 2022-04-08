@@ -67,7 +67,7 @@ label {
     display: block;
     cursor: pointer;
     height: 100px;
-    width: 945px;
+    width: 60px;
     top: 40px;
     left: 35px;
     z-index: 2;
@@ -121,9 +121,8 @@ label span:nth-child(3) {
 /*  Iten do menu aparecem quando clicado no hamburguer */
 #checkbox-menu:checked+label .menu-container {
     animation: menu-in .8s;
-    display: flex;
     opacity: 1;
-  
+    display: flex;
 }
 
 #checkbox-menu:checked+label {
@@ -139,7 +138,6 @@ label span:nth-child(3) {
 
     100% {
         transform: scale(1);
-
     }
 }
 
@@ -162,7 +160,7 @@ label span:nth-child(3) {
 /* MENU CONTENT */
 .menu-container {
     position: absolute;
-    display: flex;   /* none = desabilita /flex = habilita as opções do menu */
+    display: none;   /* none = desabilita /flex = habilita as opções do menu */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -173,6 +171,7 @@ label span:nth-child(3) {
     opacity: 0;
     top: -40px;
     left: -35px;
+    /* animation: .8s menu-out ; */
 }
 
 
