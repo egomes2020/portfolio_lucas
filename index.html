@@ -44,24 +44,24 @@
             <span></span>
             <span></span>
 
-             <!-- Menu Content -->
+            <!-- Menu Content -->
             <div class="menu-container">
                 <ul>
-                    <li><a href="portfolio.html">Portfolio</a></li>
-                    <li><a href="evolution.html">Evolução dos Desenhos</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#evolution">Evolução dos Desenhos</a></li>
                     <li><a href="#sobre">Sobre Mim</a></li>
-                    <li><a href="">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
             </div>
 
-            
+
         </label>
 
 
 
 
-        <!-- TÍTULO / FOTO / SOCIAL MEDIA / MENU CONTENT -->
-        <div class="header-wrapper">
+        <!-- TÍTULO / FOTO / SOCIAL MEDIA -->
+        <div id="home" class="header-wrapper scrollspy">
 
             <!-- Título -->
             <div class="title">
@@ -102,7 +102,7 @@
 
 
     <!-- PORTFÓLIO -->
-    <section id="portfolio">
+    <section id="portfolio" class="scrollspy">
         <h1 class="center ">Portfólio</h1>
         <!--   <a class="waves-effect waves-light btn z-depth-3" href="#">Ver Mais</a> -->
         <a href="portfolio.html"><button class="btn-a pink accent-2">Ver Mais</button></a>
@@ -157,7 +157,7 @@
 
 
     <!-- EVOLUÇÃO -->
-    <section class="evolution">
+    <section id="evolution" class="evolution scrollspy">
         <h1 class="center">Evolução dos Desenhos</h1>
         <a href="evolution.html"><button class="btn-a pink accent-2">Ver Mais</button></a>
 
@@ -195,9 +195,10 @@
 
 
     <!-- PÁGINA SOBRE -->
-    <section class="sobre">
+    <section id="sobre" class="row sobre scrollspy rowspy">
         <h1 class="center">Um Pouco Sobre Mim</h1>
         <div class="sobre-container">
+
             <article class="article-1">
                 <h2>A Paixão Pelo Desenho</h2>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora ab fugit facilis totam accusamus non
@@ -209,7 +210,6 @@
                 <div class="div-1 pink accent-2">
                     <p style="font-size:2em; color: black; font-weight: 800;">FOTO AQUI</p>
                 </div>
-
             </article>
 
             <article class="article-2">
@@ -217,6 +217,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, voluptatum distinctio. Consequatur
                     sit atque rem ex quo!</p>
 
+                <!-- figura com folha de papel editada -->
                 <div class="div-2">
                     <img src="img/folha-em-branco.jpeg" alt="">
                     <ul class="skills">
@@ -228,7 +229,10 @@
                 </div>
 
             </article>
-        </div>
+
+
+
+
     </section>
 
 
@@ -254,11 +258,21 @@
                     <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
                         content.</p>
                 </div>
-                <div class="col s12 m4 l6">
-                    <h5 class="white-text">Second Footer Content</h5>
-                    <p class="grey-text text-lighten-4">You can use rows and columns here to organize your footer
-                        content.</p>
+                <div class="col s12 m4 l6 ">
+
+                    <!-- SCROLLSPY -->
+                    <div class="scrollspy-footer">
+                        <ul class="section table-of-contents">
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#portfolio">Portfólio</a></li>
+                            <li><a href="#evolution">Evolução</a></li>
+                            <li><a href="#sobre">Sobre</a></li>
+                            <li><a href="#contato.html">Contato</a></li>
+                        </ul>
+                    </div>
+
                 </div>
+
             </div>
         </div>
         <div class="footer-copyright">

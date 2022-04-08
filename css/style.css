@@ -5,13 +5,80 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Merienda&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Courgette&family=Kanit:wght@100&family=Merienda&family=Monoton&family=Orbitron&family=Parisienne&family=Playfair+Display+SC&family=Poiret+One&display=swap');
 
+/* KEY FRAMES */
+
+/* Animação Header */
+@keyframes Zoom-out {
+    0% {
+        transform: scale(1.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
 
 
+/* Animação Menu */
+@keyframes menu-in {
+    0% {
+        transform: scale(0);
+
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes menu-out {
+    0% {
+        transform: scale(1, 3);
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1, 1);
+        opacity: 0;
+    }
+}
+
+/* Animação Portfólio */
+@keyframes Zoom-port {
+    0% {
+        transform: scale(1.5);
+    }
+  
+
+    100% {
+       transform: scale(1);
+    }
+}
+
+
+
+
+
+
+
+
+/* RESET DOCUMENTO */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    position: relative;
+
+}
+
+
+
+
+
+
 
 /* HEADER */
 header {
@@ -30,8 +97,11 @@ header {
     background-size: cover;
     background-blend-mode: darken;
     overflow: hidden;
+    scroll-behavior: smooth;
     /*   animation: 3s Zoom-out; */
 }
+
+
 
 
 
@@ -82,7 +152,7 @@ label span {
     border-radius: 20px;
     background-color: #ffff;
     transition: 0.25s ease-in-out;
-   
+
 }
 
 /* hover */
@@ -130,28 +200,7 @@ label span:nth-child(3) {
 }
 
 
-@keyframes menu-in {
-    0% {
-        transform: scale(0);
 
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes menu-out {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-    100% {
-        transform: scale(0);
-       opacity: 0;
-    }
-}
 
 
 
@@ -160,7 +209,8 @@ label span:nth-child(3) {
 /* MENU CONTENT */
 .menu-container {
     position: absolute;
-    display: none;   /* none = desabilita /flex = habilita as opções do menu */
+    display: none;
+    /* none = desabilita /flex = habilita as opções do menu */
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -269,19 +319,6 @@ label span:nth-child(3) {
 
 
 
-/* ANIMAÇÃO HEADER */
-@keyframes Zoom-out {
-    0% {
-        transform: scale(1.5);
-    }
-
-    100% {
-        transform: scale(1);
-    }
-}
-
-
-
 
 
 
@@ -309,6 +346,7 @@ h2 span {
     margin: 15px;
     font-size: 2.5em;
     z-index: 2;
+    transition: .1s;
 }
 
 
@@ -399,7 +437,7 @@ p {
     position: relative;
     margin-bottom: 200px;
     padding-left: 10px;
-    /*   background-color: #FF4081; */
+    scroll-behavior: smooth;
 }
 
 #portfolio .btn-a {
@@ -445,7 +483,6 @@ p {
 } */
 
 
-
 .cards-item {
     width: 310px;
     height: 400px;
@@ -466,14 +503,18 @@ p {
     object-fit: cover;
     border-radius: 4px;
     transform: scale(1.5);
+  
 }
 
 .cards-item a img:hover {
-    animation: 1.3s Zoom-out;
-
+    animation: 1.3s Zoom-port;
+    animation-duration:.75s;
+   animation-fill-mode: forwards;
 }
 
-/* Link Portfólio Completo */
+
+
+/* Link "Portfólio Completo" */
 div.full-icon {
     display: flex;
     align-items: center;
@@ -505,8 +546,17 @@ div.full-icon i {
 
 
 
+
+
+
+
+
+
 /* EVOLUTION */
+
+
 .evolution {
+    scroll-behavior: smooth;
     position: relative;
     padding: 30px;
     display: flex;
@@ -617,8 +667,12 @@ div.full-icon i {
 
 
 
-/* PÁGINA SOBRE */
+
+
+
+/* SOBRE */
 .sobre {
+    scroll-behavior: smooth;
     padding: 10px;
     margin-bottom: 100px;
 }
@@ -699,6 +753,10 @@ div.full-icon i {
 
 
 
+
+
+
+
 /* FOOTER */
 footer {
     position: relative;
@@ -748,7 +806,24 @@ footer {
 }
 
 
+/* SCROLLSPY */
+.scrollspy-footer {
+    position: absolute;
+    top: 20px;
+    right: 100px;
+    font-size: 1.2rem !important;
+    transition: .1s;
+}
 
+.scrollspy-footer ul li a {
+    font-weight: 300;
+    color: #fff;
+}
+
+.scrollspy-footer ul li a:hover {
+    color: #FF4081;
+
+}
 
 
 
@@ -764,13 +839,14 @@ footer {
 
 
 
-
+/* PÁGINAS SECUNDÁRIAS */
 
 
 
 
 
 /* PÁGINA PORTFOLIO.HTML */
+#portfolio {}
 
 /* SOCIAL MEDIA */
 .social-portfolio {
@@ -779,6 +855,7 @@ footer {
     left: 550px;
     margin: 15px;
     font-size: 2.5em;
+    transition: .1s;
 }
 
 
@@ -840,6 +917,26 @@ footer {
 }
 
 
+/* SCROLLSPY */
+.scrollspy-portfolio {
+    position: absolute;
+    right: 40px;
+    bottom: -160px;
+    font-size: 1.2rem !important;
+    transition: .1s;
+}
+
+.scrollspy-portfolio ul li a {
+    font-weight: 300;
+    color: #fff;
+}
+
+.scrollspy-portfolio ul li a:hover {
+    color: #FF4081;
+
+}
+
+
 
 
 
@@ -853,6 +950,10 @@ footer {
 
 
 /* PÁGINA EVOLUTION.HTML */
+.evolution {
+    border: 1px solid #fff;
+   
+}
 
 .h1-evo {
     position: relative;
@@ -864,6 +965,7 @@ footer {
     bottom: -40px;
     margin: 15px;
     font-size: 2.5em;
+    transition: .1s;
 }
 
 p {
@@ -928,6 +1030,25 @@ p {
     background-color: #FF4081;
 }
 
+
+/* SCROLLSPY */
+.scrollspy-evolution {
+    position: absolute;
+    right: 40px;
+    bottom: -85px;
+    font-size: 1.2rem !important;
+    transition: .1s;
+}
+
+.scrollspy-evolution ul li a {
+    font-weight: 300;
+    color: #fff;
+}
+
+.scrollspy-evolution ul li a:hover {
+    color: #FF4081;
+
+}
 
 
 
