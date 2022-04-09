@@ -55,6 +55,15 @@
     }
 }
 
+@keyframes init {
+    0%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(1.5);
+    }
+}
+
 
 
 
@@ -502,7 +511,9 @@ p {
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
-    transform: scale(1.5);
+   /*  transform: scale(1.5); */
+   animation: init .4s;
+   animation-fill-mode: forwards;
   
 }
 
