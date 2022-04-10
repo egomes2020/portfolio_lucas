@@ -1,0 +1,90 @@
+/* PÁGINA PORTFOLIO.HTML */
+
+
+/* SOCIAL MEDIA */
+.social-portfolio {
+    position: absolute;
+    bottom: -150px;
+    left: 550px;
+    margin: 15px;
+    font-size: 2.5em;
+    transition: .1s;
+}
+
+
+.fa-facebook {
+    margin: .1em;
+}
+
+.fa-instagram {
+    margin: .1em;
+}
+
+.fa-twitter {
+    margin: .1em;
+}
+
+.fa-whatsapp {
+    margin: .1em;
+}
+
+/* hover */
+.social-portfolio a .fa-facebook:hover {
+    color: rgb(42, 84, 236) !important;
+}
+
+.social-portfolio a .fa-instagram:hover {
+    color: rgb(232, 25, 146) !important;
+}
+
+.social-portfolio a .fa-twitter:hover {
+    color: rgb(88, 193, 238) !important;
+}
+
+.social-portfolio a .fa-whatsapp:hover {
+    color: rgb(41, 212, 15) !important;
+}
+
+
+/* BUTTON */
+#portfolio-button {
+    border-radius: 7px;
+    position: absolute;
+    left: 615px;
+    padding: 6px 30px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: .1em;
+    color: rgb(0, 0, 0);
+    /*  background-color: rgb(231, 43, 137); */
+    transition: .3s;
+    box-shadow: 2px 2px 4px 1px #000;
+    font-weight: 700;
+}
+
+ a button:hover {
+    color: rgba(255, 255, 255, 0.8);
+    font-weight: 500;
+    transform: scale(1.2);
+    background-color: #FF4081;
+}
+
+
+/* SCROLLSPY */
+.scrollspy-portfolio {
+    position: absolute;
+    right: 50px;
+    bottom: -170px;
+    font-size: 1.2rem !important;
+}
+
+.scrollspy-portfolio ul li a {
+    font-weight: 300;
+    color: #fff;
+    transition: .3s !important;
+}
+
+.scrollspy-portfolio ul li a:hover {
+    color: #FF4081;
+
+}

@@ -433,7 +433,7 @@ p {
     border-bottom: 1px solid #fff;
     margin-top: 100px;
     margin-bottom: 100px;
-    background-color: aqua;
+   
 }
 
 
@@ -506,19 +506,23 @@ p {
 
 }
 
+
+/* Zoom aout na imagem */
 .cards-item img {
     width: 310px;
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
    /*  transform: scale(1.5); */
-   animation: init .4s;
+   animation: init .8s;
    animation-fill-mode: forwards;
   
 }
 
+
+/* Zoom in na imagem */
 .cards-item a img:hover {
-    animation: 1.3s Zoom-port;
+    animation: Zoom-port;
     animation-duration:.75s;
    animation-fill-mode: forwards;
 }
@@ -602,11 +606,12 @@ div.full-icon i {
 .container-card {
     /* Used to position the stacked cards */
     position: relative;
-    width: 300px;
-    height: 400px;
-    margin: 20px;
+    width: 280px;
+    height: 380px;
+    margin: 55px;
     border-radius: 4px;
     /*   border: 1px solid #ffff; */
+    transform: rotate(-4deg);
 }
 
 
@@ -640,11 +645,12 @@ div.full-icon i {
     border-radius: 4px;
     height: 100%;
     width: 100%;
-
+    border: none;
     z-index: -1;
 
-    transform: rotate(10deg);
+    transform: rotate(25deg);
     background-image: url(../img/desenho-4.jpeg);
+    background-size: cover;
 }
 
 .container__card-2 {
@@ -658,8 +664,9 @@ div.full-icon i {
 
     z-index: -1;
 
-    transform: rotate(5deg);
+    transform: rotate(15deg);
     background-image: url(../img/desenho-5.jpeg);
+    background-size: cover;
 }
 
 
@@ -708,12 +715,20 @@ div.full-icon i {
 }
 
 .div-1 {
-    padding: 5px;
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+    width: 250px;
+    height: 250px;
     margin: 35px auto;
 }
+
+.div-1 img {
+    object-fit: cover;
+    width: 250px;
+    height: 250px;
+    clip-path: circle(40.8% at 50% 50%);
+    margin-right: 30px;
+}
+
+
 
 .article-2 {
     padding: 10px;
@@ -771,6 +786,7 @@ div.full-icon i {
 /* FOOTER */
 footer {
     position: relative;
+    height: 255px;
 }
 
 
@@ -820,15 +836,16 @@ footer {
 /* SCROLLSPY */
 .scrollspy-footer {
     position: absolute;
-    top: 20px;
+    top: -10px;
     right: 100px;
     font-size: 1.2rem !important;
-    transition: .1s;
+  
 }
 
 .scrollspy-footer ul li a {
     font-weight: 300;
     color: #fff;
+    transition: .3s !important;
 }
 
 .scrollspy-footer ul li a:hover {
@@ -856,96 +873,7 @@ footer {
 
 
 
-/* PÁGINA PORTFOLIO.HTML */
 
-
-/* SOCIAL MEDIA */
-.social-portfolio {
-    position: absolute;
-    bottom: -150px;
-    left: 550px;
-    margin: 15px;
-    font-size: 2.5em;
-    transition: .1s;
-}
-
-
-.fa-facebook {
-    margin: .1em;
-}
-
-.fa-instagram {
-    margin: .1em;
-}
-
-.fa-twitter {
-    margin: .1em;
-}
-
-.fa-whatsapp {
-    margin: .1em;
-}
-
-/* hover */
-.social-portfolio a .fa-facebook:hover {
-    color: rgb(42, 84, 236) !important;
-}
-
-.social-portfolio a .fa-instagram:hover {
-    color: rgb(232, 25, 146) !important;
-}
-
-.social-portfolio a .fa-twitter:hover {
-    color: rgb(88, 193, 238) !important;
-}
-
-.social-portfolio a .fa-whatsapp:hover {
-    color: rgb(41, 212, 15) !important;
-}
-
-
-/* BUTTON */
-#portfolio-button {
-    border-radius: 7px;
-    position: absolute;
-    left: 615px;
-    padding: 6px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .1em;
-    color: rgb(0, 0, 0);
-    /*  background-color: rgb(231, 43, 137); */
-    transition: .3s;
-    box-shadow: 2px 2px 4px 1px #000;
-    font-weight: 700;
-}
-
-.evolution a button:hover {
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 500;
-    transform: scale(1.2);
-    background-color: #FF4081;
-}
-
-
-/* SCROLLSPY */
-.scrollspy-portfolio {
-    position: absolute;
-    right: 40px;
-    bottom: -160px;
-    font-size: 1.2rem !important;
-    transition: .1s;
-}
-
-.scrollspy-portfolio ul li a {
-    font-weight: 300;
-    color: #fff;
-}
-
-.scrollspy-portfolio ul li a:hover {
-    color: #FF4081;
-
-}
 
 
 
@@ -961,105 +889,6 @@ footer {
 
 
 /* PÁGINA EVOLUTION.HTML */
-.evolution {
-   
-}
-
-.h1-evo {
-    position: relative;
-}
-
-/* SOCIAL MEDIA */
-.social-evolution {
-    position: absolute;
-    bottom: -40px;
-    margin: 15px;
-    font-size: 2.5em;
-    transition: .1s;
-}
-
-p {
-    margin-bottom: 100px;
-}
-
-.fa-facebook {
-    margin: .1em;
-}
-
-.fa-instagram {
-    margin: .1em;
-}
-
-.fa-twitter {
-    margin: .1em;
-}
-
-.fa-whatsapp {
-    margin: .1em;
-}
-
-/* hover */
-.social-evolution a .fa-facebook:hover {
-    color: rgb(42, 84, 236) !important;
-}
-
-.social-evolution a .fa-instagram:hover {
-    color: rgb(232, 25, 146) !important;
-}
-
-.social-evolution a .fa-twitter:hover {
-    color: rgb(88, 193, 238) !important;
-}
-
-.social-evolution a .fa-whatsapp:hover {
-    color: rgb(41, 212, 15) !important;
-}
-
-
-/* BUTTON */
-#evolution-html a button {
-    border-radius: 7px;
-    position: absolute;
-    left: 235px;
-    bottom: -65px;
-    padding: 6px 30px;
-    text-transform: uppercase;
-    text-decoration: none;
-    letter-spacing: .1em;
-    color: rgb(0, 0, 0);
-    /*  background-color: rgb(231, 43, 137); */
-    transition: .3s;
-    box-shadow: 2px 2px 4px 1px #000;
-    font-weight: 700;
-}
-
-#evolution-html a button:hover {
-    color: rgba(255, 255, 255, 0.8);
-    font-weight: 500;
-    transform: scale(1.2);
-    background-color: #FF4081;
-}
-
-
-/* SCROLLSPY */
-.scrollspy-evolution {
-    position: absolute;
-    right: 40px;
-    bottom: -85px;
-    font-size: 1.2rem !important;
-    transition: .1s;
-}
-
-.scrollspy-evolution ul li a {
-    font-weight: 300;
-    color: #fff;
-}
-
-.scrollspy-evolution ul li a:hover {
-    color: #FF4081;
-
-}
-
 
 
 
