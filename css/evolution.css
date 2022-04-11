@@ -4,7 +4,7 @@
 /* SOCIAL MEDIA */
 .social-evolution {
     position: absolute;
-   bottom: 350px;
+   bottom: 260px;
     left: 550px;
     margin: 15px;
     font-size: 2.5em;
@@ -72,7 +72,7 @@
 
 
 /* SCROLLSPY */
-.scrollspy-evolution {
+/* .scrollspy-evolution {
     position: absolute;
     right: 50px;
     bottom: 300px;
@@ -88,7 +88,7 @@
 .scrollspy-evolution ul li a:hover {
     color: #FF4081;
 
-}
+} */
 
 div.evolution {
     padding: 0;
@@ -98,7 +98,7 @@ div.evolution {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 150px;
-    border: 1px solid #FF4081;
+   /*  border: 1px solid #FF4081; */
     scroll-behavior: smooth;
 }
 
@@ -106,7 +106,7 @@ div.evolution {
     position: relative;
     width: 80%;
     height: 80vh;
-    border: 1px solid #40ffa9;
+  /*   border: 1px solid #40ffa9; */
     margin: 10px;
 }
 
