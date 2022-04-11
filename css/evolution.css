@@ -1,5 +1,10 @@
 /* PÁGINA EVOLUÇÃO.HTML */
 
+body {
+    background: rgb(2,0,36);
+    background: linear-gradient(169deg, rgba(2,0,36,1) 55%, rgba(11,11,74,1) 82%, rgba(0,212,255,1) 100%);
+}
+
 
 /* SOCIAL MEDIA */
 .social-evolution {
@@ -98,16 +103,16 @@ div.evolution {
     justify-content: center;
     align-items: flex-start;
     margin-bottom: 150px;
-   /*  border: 1px solid #FF4081; */
     scroll-behavior: smooth;
+    /* border: 1px solid #FF4081; */
 }
 
 .evolution > div.cards {
     position: relative;
     width: 80%;
     height: 80vh;
+    margin: 70px;
   /*   border: 1px solid #40ffa9; */
-    margin: 10px;
 }
 
 div.img {
@@ -136,7 +141,7 @@ div.img img.img-card {
 }
 
 figcaption {
-    background-color: rgba(0, 0, 0, .6);
+    background-color: rgba(0, 0, 0, .7);
     position: absolute;
     width: 280px;
     height: 60px;
@@ -144,7 +149,7 @@ figcaption {
     left: 5px;
     padding: 5px;
     opacity: 0;
-    transition: .8s;
+    transition: .6s;
   
 }
 
@@ -172,68 +177,108 @@ figcaption p {
     transform: rotate(-10deg);
 }
 
+article.description-evo {
+    position: absolute;
+    width: 220px;
+    right: 10px;
+    top:90px;
+    margin: 10px;
+    padding: 10px;
+    border-left: 2px solid #FF4081;
+    transition: .3s;
+ /*    border: 1px solid #FF4081; */
+}
+
+article.description-evo p {
+    text-indent: 40px;
+   font-size: 1.3rem;
+}
+
+
 
 /* ANIMAÇÃO DAS IMAGENS ABRINDO */
-        /* COLEÇÃO 1 */
+
+        /* CARD 1  */
+        /* COLEÇÃO 1 (child 1) */
         #check-box:checked+label#label1>:nth-child(3) {
             transform: translateX(620px) ;
             transition: 1s;
         }
-        /* COLEÇÃO 2  */
+        #check-box:checked+label#label1+ article{
+            opacity: 0;
+        }
+        
+        /* COLEÇÃO 2 (child 1) */
         #check-box2:checked+label#label2>:nth-child(3) {
             transform: translateX(620px) ;
             transition: 1s;
         }
-        /* COLEÇÃO 3  */
+        #check-box2:checked+label#label2+ article{
+            opacity: 0;
+        }
+      
+        /* COLEÇÃO 3 (child 1) */
         #check-box3:checked+label#label3>:nth-child(3) {
             transform: translateX(620px) ;
             transition: 1s;
         }
-        /* COLEÇÃO 4  */
+        #check-box3:checked+label#label3+ article{
+            opacity: 0;
+        }
+       
+        /* COLEÇÃO 4  (child 1)*/
         #check-box4:checked+label#label4>:nth-child(3) {
             transform: translateX(620px) ;
             transition: 1s;
         }
+        #check-box4:checked+label#label4+ article{
+            opacity: 0;
+        }
       
 
-        /* COLEÇÃO 1 */
+
+        /* CARD 2 */
+        /* COLEÇÃO 1(child 2)*/
         #check-box:checked+label#label1>:nth-child(2) {
             transform: translateX(310px);
             transition: 1.1s;
         }
-        /* COLEÇÃO 2 */
+       
+        /* COLEÇÃO 2 (child 2)*/
         #check-box2:checked+label#label2>:nth-child(2) {
             transform: translateX(310px);
             transition: 1.1s;
         }
-        /* COLEÇÃO 3 */
+        /* COLEÇÃO 3 (child 2) */
         #check-box3:checked+label#label3>:nth-child(2) {
             transform: translateX(310px);
             transition: 1.1s;
         }
-        /* COLEÇÃO 4 */
+        /* COLEÇÃO 4 (child 2)*/
         #check-box4:checked+label#label4>:nth-child(2) {
             transform: translateX(310px);
             transition: 1.1s;
         }
      
 
-        /* COLEÇÃO 1 */
+
+            /* CARD 3 */
+        /* COLEÇÃO 1 (child 3)*/
         #check-box:checked+label#label1>:nth-child(1) {
             transform: translatex(0px);
             transition: 1.3s;
         }
-        /* COLEÇÃO 2 */
+        /* COLEÇÃO 2  (child 3)*/
         #check-box2:checked+label#label2>:nth-child(1) {
             transform: translatex(0px);
             transition: 1.3s;
         }
-        /* COLEÇÃO 3 */
+        /* COLEÇÃO 3 (child 3)*/
         #check-box3:checked+label#label3>:nth-child(1) {
             transform: translatex(0px);
             transition: 1.3s;
         }
-        /* COLEÇÃO 4 */
+        /* COLEÇÃO 4 (child 4)*/
         #check-box4:checked+label#label4>:nth-child(1) {
             transform: translatex(0px);
             transition: 1.3s;
@@ -255,6 +300,51 @@ figcaption p {
         }
 
         label#label1>:nth-child(3) {
+            transform: translatex(0px) rotate(-10deg);
+            transition: 1.3s;
+        }
+        /* card 2 */
+        label#label2>:nth-child(1) {
+            transform: translateX(0px) rotate(20deg);;
+            transition: 1s;
+        }
+
+        label#label2>:nth-child(2) {
+            transform: translateX(0px)  rotate(10deg);
+            transition: 1.1s;
+        }
+
+        label#label2>:nth-child(3) {
+            transform: translatex(0px) rotate(-10deg);
+            transition: 1.3s;
+        }
+        /* card 3 */
+        label#label3>:nth-child(1) {
+            transform: translateX(0px) rotate(20deg);;
+            transition: 1s;
+        }
+
+        label#label3>:nth-child(2) {
+            transform: translateX(0px)  rotate(10deg);
+            transition: 1.1s;
+        }
+
+        label#label3>:nth-child(3) {
+            transform: translatex(0px) rotate(-10deg);
+            transition: 1.3s;
+        }
+        /* card 4 */
+        label#label4>:nth-child(1) {
+            transform: translateX(0px) rotate(20deg);;
+            transition: 1s;
+        }
+
+        label#label4>:nth-child(2) {
+            transform: translateX(0px)  rotate(10deg);
+            transition: 1.1s;
+        }
+
+        label#label4>:nth-child(3) {
             transform: translatex(0px) rotate(-10deg);
             transition: 1.3s;
         }

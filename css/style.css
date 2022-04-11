@@ -48,18 +48,19 @@
     0% {
         transform: scale(1.5);
     }
-  
+
 
     100% {
-       transform: scale(1);
+        transform: scale(1);
     }
 }
 
 @keyframes init {
-    0%{
+    0% {
         transform: scale(1);
     }
-    100%{
+
+    100% {
         transform: scale(1.5);
     }
 }
@@ -80,7 +81,8 @@
 
 body {
     position: relative;
-
+    background: rgb(2, 0, 36);
+    background: linear-gradient(169deg, rgba(2, 0, 36, 1) 55%, rgba(11, 11, 74, 1) 82%, rgba(0, 212, 255, 1) 100%);
 }
 
 
@@ -91,10 +93,12 @@ body {
 
 /* HEADER */
 header {
-    background-color: rgba(0, 0, 0, 1);
+    background: rgb(2,0,36);
+    background: linear-gradient(101deg, rgba(2,0,36,1) 44%, rgba(11,11,74,1) 84%, rgba(0,212,255,1) 100%);
     position: relative;
     margin-bottom: 100px;
     overflow: hidden;
+    box-shadow: 0px 1px 5px 1px rgba(255, 255, 255, 0.205);
 }
 
 
@@ -102,7 +106,7 @@ header {
     width: 100%;
     height: 100vh;
     display: flex;
-    background: rgba(0, 0, 0, .78) url(../img/brandi-redd-aJTiW00qqtI-unsplash.jpg);
+    background-color: rgba(0, 0, 0, .5);
     background-size: cover;
     background-blend-mode: darken;
     overflow: hidden;
@@ -433,7 +437,7 @@ p {
     border-bottom: 1px solid #fff;
     margin-top: 100px;
     margin-bottom: 100px;
-   
+
 }
 
 
@@ -477,6 +481,7 @@ p {
     /*  background-color: aquamarine; */
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 100px;
 }
 
@@ -493,9 +498,9 @@ p {
 
 
 .cards-item {
-    width: 310px;
-    height: 400px;
-    margin: 10px;
+    width: 270px;
+    height: 350px;
+    margin: 8px;
     overflow: hidden;
     border-radius: 4px;
     /*  transition: .3s; */
@@ -513,18 +518,18 @@ p {
     height: 400px;
     object-fit: cover;
     border-radius: 4px;
-   /*  transform: scale(1.5); */
-   animation: init .8s;
-   animation-fill-mode: forwards;
-  
+    /*  transform: scale(1.5); */
+    animation: init .8s;
+    animation-fill-mode: forwards;
+
 }
 
 
 /* Zoom in na imagem */
 .cards-item a img:hover {
     animation: Zoom-port;
-    animation-duration:.75s;
-   animation-fill-mode: forwards;
+    animation-duration: .75s;
+    animation-fill-mode: forwards;
 }
 
 
@@ -851,9 +856,9 @@ footer {
 .scrollspy-footer ul li a:hover {
     color: #FF4081;
     border-left: 3px solid #FF4081;
-   transform: scale(1.2);
-   transition-duration:.3s ;
-   font-weight: 400;
+    transform: scale(1.2);
+    transition-duration: .3s;
+    font-weight: 400;
 }
 
 
