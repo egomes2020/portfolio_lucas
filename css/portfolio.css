@@ -1,5 +1,8 @@
 /* PÁGINA PORTFOLIO.HTML */
 
+html {
+    position: relative;
+}
 
 /* SOCIAL MEDIA */
 .social-portfolio {
@@ -31,18 +34,22 @@
 /* hover */
 .social-portfolio a .fa-facebook:hover {
     color: rgb(42, 84, 236) !important;
+    transition: .3s;
 }
 
 .social-portfolio a .fa-instagram:hover {
     color: rgb(232, 25, 146) !important;
+    transition: .3s;
 }
 
 .social-portfolio a .fa-twitter:hover {
     color: rgb(88, 193, 238) !important;
+    transition: .3s;
 }
 
 .social-portfolio a .fa-whatsapp:hover {
     color: rgb(41, 212, 15) !important;
+    transition: .3s;
 }
 
 
@@ -62,29 +69,93 @@
     font-weight: 700;
 }
 
- a button:hover {
-    color: rgba(255, 255, 255, 0.8);
+a button:hover {
     font-weight: 500;
     transform: scale(1.2);
     background-color: #FF4081;
 }
 
 
-/* SCROLLSPY */
-/* .scrollspy-portfolio {
+
+
+
+
+/* LIGHT BOX  */
+div.light-box {
     position: absolute;
-    right: 50px;
-    bottom: -170px;
-    font-size: 1.2rem !important;
+    top: 0;
+    padding: 0;
+    margin: 0;
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    visibility: hidden;
 }
 
-.scrollspy-portfolio ul li a {
-    font-weight: 300;
+div.box-img {
+    width: 400px;
+    height: 95vh;
+    margin: 40px;
+   
+}
+
+.box-img img {
+    width: 400px;
+    height: 95vh;
+    object-fit: cover;
+}
+
+.box-img img {
+    opacity: 0;
+}
+
+.light-box:target  img {
+    opacity: 1;
+    transition: opacity .3s linear;
+}
+
+
+.lb-btn {
+    position: absolute;
+    font-size: 3.6rem;
     color: #fff;
-    transition: .3s !important;
+    cursor: pointer;
+    transition: .4s;
 }
 
-.scrollspy-portfolio ul li a:hover {
+.lb-btn:hover {
+    transform: scale(1.3);
     color: #FF4081;
+}
 
-} */
+/* Arrow left */
+#prev {
+    left: 100px;
+    bottom: 280px;
+}
+
+/* Arrow right */
+#next {
+    right: 100px;
+    bottom: 280px;
+}
+
+/* Close */
+#close {
+    right: 100px;
+    top: 25px;
+}
+
+
+/* TARGETS */
+
+.light-box:target {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+}
