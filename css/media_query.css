@@ -246,6 +246,68 @@
     }
     
 
+    /* SESSÃO CONTATO */
+    h1#title-cont {
+        margin-bottom: -165px;
+    }
+
+    section#contato-email {
+      flex-wrap: wrap;
+    }
+
+    section#contato-whats {
+        flex-wrap: wrap;
+      }
+
+      i.contato {
+        color: #FF4081;
+        padding: 10px;
+        margin-top: 30px;
+        margin-bottom: -60px;
+    }
+    
+
+    /* SESSÃO FOOTER */
+    footer {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        height: 550px;
+    }
+    
+    
+    /* social media */
+    .social-footer {
+        position: absolute;
+        bottom: 0px;
+        right: 100px;
+        margin: 15px;
+        font-size: 2.5em;
+    }
+
+    /* SCROLLSPY */
+.scrollspy-footer {
+    position: absolute;
+    top: 220px;
+    right: 130px;
+    font-size: 1.1rem !important;
+    width: 120px;
+}
+
+.scrollspy-footer ul li a {
+    font-weight: 300;
+    color: #fff;
+}
+
+
+
+
+  
+
+    
+
 
 
 
