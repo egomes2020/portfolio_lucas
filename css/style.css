@@ -633,16 +633,23 @@ div.full-icon i {
     position: relative;
     padding: 30px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     margin-bottom: 100px;
+    margin-top: 250px;
+}
+
+#h1-evo{
+    position: absolute;
+    top: -250px;
 }
 
 .evolution a button {
     border-radius: 7px;
     position: absolute;
-    left: 210px;
-    bottom: 130px;
+    left: 600px;
+    bottom: -60px;
     padding: 6px 30px;
     text-transform: uppercase;
     text-decoration: none;
