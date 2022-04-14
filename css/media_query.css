@@ -112,10 +112,16 @@
     .cards-item {
         width: 250px;
         height: 330px;
-        margin: 8px;
-        overflow: hidden;
-        border-radius: 4px;
-        /*  transition: .3s; */
+    }
+
+    #portfolio .btn-a {
+        left: 597px;
+        top: 90px;
+    }
+
+    #portfolio .btn-a {
+        left: 130px;
+        top: 90px;
     }
 
     /* SESSÃO EVOLUÇÃO */
