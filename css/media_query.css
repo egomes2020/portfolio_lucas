@@ -63,7 +63,6 @@
         cursor: pointer;
         height: 30px;
         width: 30px;
-        border-radius: 50%;
         top: 40px;
         left: 35px;
         z-index: 2;
@@ -84,7 +83,7 @@
     #checkbox-menu:checked+label .menu-container {
         animation: menu-in .8s;
         animation-fill-mode: forwards;
-        width: 275px;
+        width: 265px;
         background-color: rgba(0, 0, 0, .97);
     }
 
@@ -93,7 +92,7 @@
     /* Itens do menu somem  */
     #checkbox-menu:not(:checked)+label .menu-container {
         animation: menu-out .8s ease-out;
-        width: 275px;
+        width: 265px;
         background-color: rgba(0, 0, 0, .97);
     }
 
@@ -102,9 +101,146 @@
         text-align: center;
         margin-left: 10px;
         margin-bottom: 15px;
-        font-size: 1.5em;
+        font-size: 1.8em;
         font-family: 'Kanit', sans-serif;
         font-weight: 800;
         transition: .3s;
     }
+
+    /* SESSÃO PORTFÓLIO */
+    .cards-item {
+        width: 250px;
+        height: 310px;
+        margin: 8px;
+        overflow: hidden;
+        border-radius: 4px;
+        /*  transition: .3s; */
+    }
+
+    /* SESSÃO EVOLUÇÃO */
+    .evolution a button {
+        border-radius: 7px;
+        position: absolute;
+        left: 140px;
+        bottom: -60px;
+        padding: 6px 30px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: .1em;
+        color: rgb(0, 0, 0);
+        /*  background-color: rgb(231, 43, 137); */
+        transition: .3s;
+        box-shadow: 2px 2px 4px 1px #000;
+        font-weight: 700;
+    }
+    
+
+    .container-card {
+        /* Used to position the stacked cards */
+        position: relative;
+        width: 250px;
+        height: 310px;
+        margin: 55px;
+        border-radius: 4px;
+        /*   border: 1px solid #ffff; */
+        transform: rotate(-4deg);
+    }
+    
+    
+    .container-card img {
+        width: 250px;
+        height: 310px;
+        border-radius: 4px;
+        object-fit: cover;
+        cursor: pointer;
+        transition: .5s;
+    }
+
+    .container-card a {
+        width: 250px;
+        height: 310px;
+        border-radius: 4px;
+      
+    }
+
+    .container-card a :hover {
+      transform: scale(0.8);
+        box-shadow: 0px 0px 3px 4px rgb(255, 255, 255);
+    }
+
+    /* SESSÃO SOBRE */
+
+    .sobre {
+        /*  scroll-behavior: smooth; */
+        padding: 10px;
+        margin-bottom: 100px;
+    }
+    
+    .sobre-container {
+        padding: 10px;
+        margin-top: -50px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: row;
+      flex-wrap: wrap;
+    }
+    
+    .sobre-container p {
+        text-indent: 25px;
+        margin: 10px 0px;
+    }
+    
+    .article-1 {
+        margin-right: 20px;
+        padding: 10px;
+        border-right: 1px solid #fff;
+    }
+    
+    .div-1 {
+        width: 250px;
+        height: 250px;
+        margin: 35px auto;
+    }
+    
+    .div-1 img {
+        object-fit: cover;
+        width: 250px;
+        height: 250px;
+        clip-path: circle(40.8% at 50% 50%);
+        margin-right: 30px;
+    }
+    
+    
+    
+    .article-2 {
+        padding: 10px;
+        width: 90%;
+        border-right: 1px solid #fff;
+        margin: 50px 20px ;
+    }
+    
+    .div-2 {
+        position: relative;
+        padding: 5px;
+        width: 100%;
+        height: 450px;
+    }
+    
+    .div-2 img {
+        width: 100%;
+        height: 420px;
+        object-fit: cover;
+    }
+    
+    
+    .skills {
+        left: 50px;
+     
+    }
+    
+
+
+
+
+
 }

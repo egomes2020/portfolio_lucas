@@ -171,7 +171,7 @@ header {
     padding-left: 5px;
     cursor: pointer;
     display: inline-block;
-    height: 60px;
+    height: 30px;
     line-height: 25px;
     font-size: 1rem;
     -webkit-user-select: none;
@@ -769,6 +769,7 @@ div.full-icon i {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
+  
 }
 
 .sobre-container p {
@@ -800,12 +801,13 @@ div.full-icon i {
 
 .article-2 {
     padding: 10px;
+    
 }
 
 .div-2 {
     position: relative;
     padding: 5px;
-    width: 750px;
+    width: 90%;
     height: 450px;
 }
 
