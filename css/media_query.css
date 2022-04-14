@@ -57,6 +57,17 @@
     }
 
     /* MENU HAMBURGUER */
+    label {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        top: 40px;
+        left: 35px;
+        z-index: 2;
+    }
 
     label span {
         position: absolute;
