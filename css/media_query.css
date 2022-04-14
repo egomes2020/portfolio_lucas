@@ -23,7 +23,7 @@
     .title h1 {
         font-size: 3.5em;
         margin-top: -100px;
-        margin-left: 35px;
+        margin-left: 25px;
         font-weight: 450;
     }
 
@@ -40,6 +40,7 @@
         width: 40px;
         height: 40px;
         margin-left: -10px;
+
     }
 
     h2 span {
@@ -49,10 +50,50 @@
     /* SOCIAL MEDIA HEADER */
     .social {
         position: absolute;
-        bottom: 0px;
+        bottom: 30px;
         margin: 45px 45px;
         font-size: 2.5em;
         z-index: 2;
     }
 
+    /* MENU HAMBURGUER */
+
+    label span {
+        position: absolute;
+        display: block;
+        height: 5px;
+        width: 50px;
+        border-radius: 20px;
+        background-color: #ffff;
+        transition: .6s ease-in-out;
+    
+    }
+
+    /*  Itens do menu aparecem quando clicado no hamburguer */
+    #checkbox-menu:checked+label .menu-container {
+        animation: menu-in .8s;
+        animation-fill-mode: forwards;
+        width: 275px;
+        background-color: rgba(0, 0, 0, .97);
+    }
+
+
+
+    /* Itens do menu somem  */
+    #checkbox-menu:not(:checked)+label .menu-container {
+        animation: menu-out .8s ease-out;
+        width: 275px;
+        background-color: rgba(0, 0, 0, .97);
+    }
+
+    .menu-container ul li {
+        padding: 10px;
+        text-align: center;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        font-size: 1.5em;
+        font-family: 'Kanit', sans-serif;
+        font-weight: 800;
+        transition: .3s;
+    }
 }
