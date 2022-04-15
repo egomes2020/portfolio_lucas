@@ -273,6 +273,10 @@
         position: relative;
         height: 550px;
     }
+
+    #index-footer h5{
+        margin-left: 75px;
+    }
     
     
     /* social media */
@@ -297,11 +301,6 @@
     font-weight: 300;
     color: #fff;
 }
-
-
-}
-
-
 
 
 
@@ -339,6 +338,11 @@
     top: 0px;
 }
 
+#portfolio-footer h5{
+    margin-left: 75px;
+}
+
+
 
 
 
@@ -361,9 +365,152 @@
 
 
 
-
-
-
-
-
  /* EVOLUTION PAGE */
+
+
+ /* SOCIAL MEDIA */
+ .social-evolution{
+    position: absolute;
+    bottom: 670px;
+    left: 100px;
+    margin: 15px;
+    font-size: 2.5em;
+    transition: .1s;
+}
+
+
+/* BUTTON */
+#evolution-button {
+    top: 170px;
+    left: 140px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+div.evolution {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    margin-bottom: 150px;
+    scroll-behavior: smooth;
+    /* border: 1px solid #FF4081; */
+}
+
+.evolution>div.cards {
+    position: relative;
+    width: 80%;
+    height: 80vh;
+    margin: 250px 0px;
+    /*   border: 1px solid #40ffa9; */
+}
+
+div.img {
+    position: absolute;
+    width: 250px;
+    height: 350px;
+    margin-left: -30px;
+}
+
+div.img img.img-card {
+    width: 250px;
+    height: 350px;
+    object-fit: cover;
+    cursor: pointer;
+    transition: .8s;
+    margin: 5px;
+}
+
+.img-card:hover {
+    transform: scale(1.2);
+}
+
+.img-card:hover+figcaption {
+    transform: scale(1.2) translatey(45%);
+    opacity: 1;
+}
+
+figcaption {
+    background-color: rgba(0, 0, 0, .7);
+    position: absolute;
+    width: 250px;
+    height: 60px;
+    bottom: -5px;
+    left: 5px;
+    padding: 5px;
+    opacity: 0;
+    transition: .6s;
+
+}
+
+figcaption p {
+    font-weight: 800;
+    margin-top: 15px;
+}
+
+#img1 {
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    transform: rotate(20deg);
+}
+
+#img2 {
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    transform: rotate(10deg);
+}
+
+#img3 {
+    z-index: 1;
+    top: 30px;
+    left: 30px;
+    transform: rotate(-10deg);
+}
+
+article.description-evo {
+    position: absolute;
+    width: 220px;
+    right: 10px;
+    top: -450px;
+    margin-top:  200px;
+    padding: 10px;
+    border-left: 2px solid #FF4081;
+    transition: .3s;
+    /*    border: 1px solid #FF4081; */
+}
+
+article.description-evo p {
+    text-indent: 40px;
+    font-size: 1.3rem;
+}
+
+ /* FOOTER */
+ #evo-footer h5{
+    margin-left: 75px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
