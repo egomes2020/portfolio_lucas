@@ -117,12 +117,7 @@
     }
 
     #portfolio .btn-a {
-        left: 597px;
-        top: 90px;
-    }
-
-    #portfolio .btn-a {
-        left: 130px;
+        left: 160px;
         top: 90px;
     }
 
@@ -313,7 +308,56 @@
 
  /* PORTFOLIO PAGE */
 
+ /*  LIGHTBOX */
+ div.box-img {
+    width: 330px;
+    height: 85vh;
+   
+}
 
+.box-img img {
+    width: 330px;
+    height: 85vh;
+    object-fit: cover;
+}
+
+/* Arrow left */
+#prev {
+    left: 10px;
+    bottom: 280px;
+}
+
+/* Arrow right */
+#next {
+    right: 10px;
+    bottom: 280px;
+}
+
+/* Close */
+#close {
+    right: 10px;
+    top: 0px;
+}
+
+
+
+
+ /* SOCIAL MEDIA */
+.social-portfolio {
+    position: absolute;
+    bottom: -150px;
+    right: 0;
+    left: 110px;
+    margin: 15px;
+    font-size: 2.5em;
+    transition: .1s;
+}
+
+
+/* FOOTER */
+.portfolio-sf {
+    margin-right: 30px;
+}
 
 
 
