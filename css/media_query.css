@@ -450,7 +450,7 @@ figcaption p {
     margin-top: 2px;
 }
 
-#img1 {
+/* #img1 {
     z-index: 1;
     top: 30px;
     left: 30px;
@@ -470,7 +470,7 @@ figcaption p {
     left: 30px;
     transform: rotate(-10deg);
 }
-
+ */
 article.description-evo {
     position: absolute;
     width: 220px;

@@ -974,7 +974,7 @@ footer {
 
 
 .scrollspy-footer ul li a:hover {
-    color: #ff408062;
+    color: #ff4081;
     border-left: 3px solid #FF4081;
     transform: scale(1.2);
     transition-duration: .3s;
