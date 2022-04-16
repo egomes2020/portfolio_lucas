@@ -3,7 +3,7 @@
 
 $(document).ready(function () {
     $(".button-collapse").sideNav();
-    $('.collapsible').collapsible();
+   /*  $('.collapsible').collapsible(); */
     $('.scrollspy').scrollSpy();
 
 
