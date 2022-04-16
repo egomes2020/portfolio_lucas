@@ -23,7 +23,7 @@
 /* Animação Menu */
 @keyframes menu-in {
     0% {
-       transform: translateX(-1000px);
+        transform: translateX(-1000px);
         visibility: hidden;
         opacity: 1;
     }
@@ -41,21 +41,19 @@
         visibility: visible;
         opacity: 1;
     }
+
     100% {
         transform: translateX(-1000px);
         visibility: hidden;
         opacity: 1;
-      
+
     }
 }
 
 @keyframes menu-load {
-    0%{
-      
-    }
-    100%{
-        
-    }
+    0% {}
+
+    100% {}
 }
 
 
@@ -276,7 +274,7 @@ label span:nth-child(3) {
     justify-content: center;
     height: 100vh;
     width: 100%;
-   /*  background-color: rgba(0, 0, 0, .96); */
+    /*  background-color: rgba(0, 0, 0, .96); */
     z-index: -1;
     top: -40px;
     left: -35px;
@@ -557,11 +555,15 @@ p {
     overflow: hidden;
     border-radius: 4px;
     /*  transition: .3s; */
+    box-shadow: 10px 10px 20px rgba(11, 11, 74, 1),
+    -5px -5px 15px rgba(0, 212, 255, 1);
 }
 
 .cards-item:hover {
     box-shadow: 0px 0px 3px 4px rgb(255, 255, 255);
-
+/*   box-shadow: 10px 10px 20px rgba(11, 11, 74, 1),
+  -5px -5px 15px rgba(0, 212, 255, 1);
+ */
 }
 
 
@@ -640,7 +642,7 @@ div.full-icon i {
     margin-top: 250px;
 }
 
-#h1-evo{
+#h1-evo {
     position: absolute;
     top: -250px;
 }
@@ -677,6 +679,7 @@ div.full-icon i {
     border-radius: 4px;
     /*   border: 1px solid #ffff; */
     transform: rotate(-4deg);
+  
 }
 
 
@@ -696,13 +699,15 @@ div.full-icon i {
     width: 300px;
     height: 400px;
     border-radius: 4px;
-  
+
 }
 
 .container-card a :hover {
     width: 320px;
     height: 420px;
     box-shadow: 0px 0px 3px 4px rgb(255, 255, 255);
+   /*  box-shadow: 23px 23px 29px rgba(11, 11, 74, 1),
+    -10px -10px 20px rgba(0, 212, 255, 1); */
 }
 
 .container__card-1 {
@@ -769,7 +774,7 @@ div.full-icon i {
     display: flex;
     align-items: flex-start;
     flex-direction: row;
-  
+
 }
 
 .sobre-container p {
@@ -801,7 +806,7 @@ div.full-icon i {
 
 .article-2 {
     padding: 10px;
-    
+
 }
 
 .div-2 {
@@ -866,6 +871,11 @@ section#contato-email {
     align-items: center;
     justify-content: center;
     width: 70%;
+    border-radius: 19px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(169deg, rgba(2, 0, 36, 1) 55%, rgba(11, 11, 74, 1) 82%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: 23px 23px 29px rgba(11, 11, 74, 1),
+        -10px -10px 20px rgba(0, 212, 255, 1);
 }
 
 section#contato-email h2 {
@@ -879,6 +889,11 @@ section#contato-whats {
     align-items: center;
     justify-content: center;
     width: 70%;
+    border-radius: 19px;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(169deg, rgba(2, 0, 36, 1) 55%, rgba(11, 11, 74, 1) 82%, rgba(0, 212, 255, 1) 100%);
+    box-shadow: 23px 23px 29px rgba(11, 11, 74, 1),
+        -10px -10px 20px rgba(0, 212, 255, 1);
 }
 
 section#contato-whats h2 {
@@ -1054,7 +1069,4 @@ footer {
 
 
 
- @media (max-width: 400px) {
-   
-
-} 
+@media (max-width: 400px) {}
