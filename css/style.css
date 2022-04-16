@@ -6,7 +6,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Courgette&family=Kanit:wght@100&family=Merienda&family=Monoton&family=Orbitron&family=Parisienne&family=Playfair+Display+SC&family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&family=Anton&family=Bangers&family=Courgette&family=Indie+Flower&family=Kanit:wght@100&family=Merienda&family=Monoton&family=Orbitron&family=Parisienne&family=Playfair+Display+SC&family=Poiret+One&display=swap');
 
-/* KEY FRAMES */
+/* KEY FRAMES ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* Animação Header */
 @keyframes Zoom-out {
@@ -87,7 +87,7 @@
 
 
 
-/* RESET DOCUMENTO */
+/* RESET DOCUMENTO //////////////////////////////////////////////////////////////////////////////////////////////////////*/
 * {
     margin: 0;
     padding: 0;
@@ -103,7 +103,7 @@ body {
 
 
 
-/* SCROLLBAR PERSONALIZADO */
+/* SCROLLBAR PERSONALIZADO //////////////////////////////////////////////////////////////////////////////////////////////*/
 body::-webkit-scrollbar {
     width: 20px;
 }
@@ -126,7 +126,7 @@ body::-webkit-scrollbar-thumb {
 
 
 
-/* HEADER */
+/* HEADER ///////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 header {
     background: rgb(2, 0, 36);
     background: linear-gradient(101deg, rgba(2, 0, 36, 1) 44%, rgba(11, 11, 74, 1) 84%, rgba(0, 212, 255, 1) 100%);
@@ -155,7 +155,7 @@ header {
 
 
 
-/* MENU HAMBURGUER */
+/* MENU HAMBURGUER //////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 /* #checkebox-menu {
     position: absolute;
@@ -265,7 +265,7 @@ label span:nth-child(3) {
 
 
 
-/* MENU CONTENT */
+/* MENU CONTENT /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .menu-container {
     position: absolute;
     display: flex;
@@ -322,7 +322,7 @@ label span:nth-child(3) {
 
 
 
-/* TÍTULO PRINCIPAL*/
+/* TÍTULO PRINCIPAL//////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .title {
     display: flex;
     flex-direction: column;
@@ -358,7 +358,7 @@ label span:nth-child(3) {
 
 
 
-/* FOTO */
+/* FOTO ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .foto {
     display: flex;
     align-items: center;
@@ -382,7 +382,7 @@ label span:nth-child(3) {
 
 
 
-/* LOGO */
+/* LOGO ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .logo {
     width: 85px;
     height: 85px;
@@ -398,7 +398,7 @@ h2 span {
 
 
 
-/* SOCIAL MEDIA */
+/* SOCIAL MEDIA /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .social {
     position: absolute;
     bottom: 0px;
@@ -451,7 +451,7 @@ h2 span {
 
 
 
-/* TÍTULOS */
+/* TÍTULOS ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 h1 {
     margin: 100px 0 120px 0;
     font-size: 4em;
@@ -495,7 +495,7 @@ p {
 
 
 
-/* PORTFÓLIO */
+/* SESSÃO PORTFÓLIO /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 #portfolio {
     position: relative;
     padding: 0;
@@ -555,15 +555,15 @@ p {
     overflow: hidden;
     border-radius: 4px;
     /*  transition: .3s; */
-    box-shadow: 10px 10px 20px rgba(11, 11, 74, 1),
-    -5px -5px 15px rgba(0, 212, 255, 1);
+   /*  box-shadow: 10px 10px 20px rgba(11, 11, 74, 1),
+    -5px -5px 15px rgba(0, 212, 255, 1); */
 }
 
 .cards-item:hover {
-    box-shadow: 0px 0px 3px 4px rgb(255, 255, 255);
-/*   box-shadow: 10px 10px 20px rgba(11, 11, 74, 1),
+   /*  box-shadow: 0px 0px 3px 4px rgb(255, 255, 255); */
+  box-shadow: 10px 10px 20px rgba(11, 11, 74,1),
   -5px -5px 15px rgba(0, 212, 255, 1);
- */
+
 }
 
 
@@ -627,7 +627,7 @@ div.full-icon i {
 
 
 
-/* EVOLUTION */
+/* SESSÃO EVOLUTION /////////////////////////////////////////////////////////////////////////////////////////////////////*/
 
 
 .evolution {
@@ -705,9 +705,8 @@ div.full-icon i {
 .container-card a :hover {
     width: 320px;
     height: 420px;
-    box-shadow: 0px 0px 3px 4px rgb(255, 255, 255);
-   /*  box-shadow: 23px 23px 29px rgba(11, 11, 74, 1),
-    -10px -10px 20px rgba(0, 212, 255, 1); */
+    box-shadow: 10px 10px 20px rgba(11, 11, 74,1),
+    -5px -5px 15px rgba(0, 212, 255, 1);
 }
 
 .container__card-1 {
@@ -761,7 +760,7 @@ div.full-icon i {
 
 
 
-/* SOBRE */
+/* SESSÃO SOBRE /////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .sobre {
     /*  scroll-behavior: smooth; */
     padding: 10px;
@@ -858,7 +857,7 @@ div.full-icon i {
 
 
 
-/* FORMULÁRIO DE CONTATO */
+/* SESSÃO FORMULÁRIO DE CONTATO /////////////////////////////////////////////////////////////////////////////////////////*/
 h1#title-cont {
     margin-top: 170px;
     margin-bottom: -100px;
@@ -919,7 +918,7 @@ i.contato {
 
 
 
-/* FOOTER */
+/* SESSÃO FOOTER ////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 footer {
     position: relative;
     height: 255px;
@@ -973,7 +972,7 @@ footer {
 }
 
 
-/* SCROLLSPY */
+/* SCROLLSPY ///////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .scrollspy-footer {
     position: absolute;
     top: -10px;
@@ -1004,69 +1003,3 @@ footer {
 
 
 
-/* --------------------------------------------------------------------------------------------------------------------- */
-
-
-
-
-
-/* PÁGINAS SECUNDÁRIAS */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* PÁGINA EVOLUTION.HTML */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* /* @MÉDIA QUERY */
-
-
-
-@media (max-width: 400px) {}
