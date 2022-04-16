@@ -250,9 +250,8 @@ label span:nth-child(3) {
 }
 
 
-
 /* Itens do menu somem  */
-#checkbox-menu:not(:checked)+label .menu-container {
+#checkbox-menu:not(:checked)+label .menu-container-out{
     animation: menu-out .8s ease-out;
     width: 942px;
     background-color: rgba(0, 0, 0, .97);

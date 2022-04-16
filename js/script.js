@@ -21,3 +21,27 @@ $(document).ready(function () {
 })
 
 
+
+
+
+/* personal script */
+
+const input = document.getElementById('checkbox-menu');
+
+
+
+function lostClass() {
+  const menu = document.getElementById('menu-container');
+  menu.classList.remove('menu-container');
+}
+
+input.addEventListener('load', lostClass);
+
+
+function toggle() {
+  const menu = document.getElementById('menu-container');
+  menu.classList.add('menu-container-out');
+}
+
+input.addEventListener('click', toggle);
+

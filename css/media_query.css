@@ -93,7 +93,7 @@
 
 
     /* Itens do menu somem  */
-    #checkbox-menu:not(:checked)+label .menu-container {
+    #checkbox-menu:not(:checked)+label .menu-container-out {
         animation: menu-out .8s ease-out;
         width: 265px;
         background-color: rgba(0, 0, 0, .97);
@@ -422,7 +422,7 @@ div.img img.img-card {
     height: 350px;
     object-fit: cover;
     cursor: pointer;
-    transition: .8s;
+    transition: .4s;
     margin: 5px;
 }
 
@@ -445,7 +445,7 @@ figcaption {
     left: 5px;
     padding: 5px;
     opacity: 1;
-    transition: .8s;
+    transition: .4s;
 
 }
 
@@ -483,7 +483,7 @@ article.description-evo {
     margin-top:  200px;
     padding: 10px;
     border-left: 2px solid #FF4081;
-    transition: .3s;
+    transition: .4s;
     /*    border: 1px solid #FF4081; */
     animation-iteration-count: 0;
 }
