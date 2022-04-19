@@ -1,6 +1,10 @@
 /* PÁGINA EVOLUÇÃO.HTML */
 
 
+/* FONT AWSOME */
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css);
+
+
 
 /* SOCIAL MEDIA */
 .social-evolution {
@@ -162,6 +166,29 @@ figcaption p {
     transform: rotate(-10deg);
 }
 
+
+.action-description {
+    width: 350px;
+    position: absolute;
+    right: 280px;
+    top: 220px;
+    color: #FF4081;
+}
+
+.action-description h5{
+    font-size: 17px;
+    font-weight: 600;
+    font-family: 'Kanit', sans-serif;
+    margin-top: 0;
+}
+
+i#icone-h5 {
+    color: #FF4081;
+    font-size: 20px;
+
+}
+
+
 article.description-evo {
     position: absolute;
     width: 220px;
@@ -190,7 +217,7 @@ article.description-evo p {
     transition: 1s;
 }
 
-#check-box:checked+label#label1+article {
+#check-box:checked+label#label1+ .action-description + article {
     opacity: 0;
 }
 
@@ -200,7 +227,7 @@ article.description-evo p {
     transition: 1s;
 }
 
-#check-box2:checked+label#label2+article {
+#check-box2:checked+label#label2+ .action-description + article  {
     opacity: 0;
 }
 
@@ -210,7 +237,7 @@ article.description-evo p {
     transition: 1s;
 }
 
-#check-box3:checked+label#label3+article {
+#check-box3:checked+label#label3+ .action-description + article {
     opacity: 0;
 }
 
@@ -220,7 +247,7 @@ article.description-evo p {
     transition: 1s;
 }
 
-#check-box4:checked+label#label4+article {
+#check-box4:checked+label#label4+ .action-description + article {
     opacity: 0;
 }
 
@@ -349,3 +376,5 @@ label#label4>:nth-child(3) {
     transform: translatex(0px) rotate(-10deg);
     transition: 1.3s;
 }
+
+
