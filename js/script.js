@@ -9,7 +9,6 @@ $(document).ready(function () {
 
 
 
-
     /* SCROLLFIRE */
     var options = [
         {selector: '.cards', offset: 200, callback: customCallbackFunc },
